@@ -1,0 +1,57 @@
+@import "../main.css";
+
+a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+header {
+  background-color: var(--blue);
+  align-items: center;
+  text-align: right;
+  justify-content: space-between;
+  padding: 8px;
+  display: flex;
+}
+
+header img {
+  max-width: 62px;
+  max-height: 61px;
+  align-self: flex-start;
+}
+
+.hidden {
+  display: none;
+}
+
+.mobile-menu-icon {
+  background-color: var(--orange);
+  border: none;
+}
+
+.nav-bar ul {
+  margin-right: 4px;
+}
+
+
+@media (min-width: 768px) {
+  .mobile-menu-icon {
+    display: none;
+  }
+  .nav-bar {
+    text-align:center;
+    flex-grow:1;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    justify-content: center; 
+    margin-right: 0;
+    gap: 40px;
+    text-align:center; 
+  }
+}
+
+.nav-bar li {
+  list-style: none;
+}

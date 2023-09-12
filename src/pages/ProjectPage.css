@@ -1,0 +1,43 @@
+/* ProjectPage.css */
+@import "../main.css";
+
+/* Styles for the entire project page container */
+.project-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+  /* Styles for the project title */
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+  /* Styles for the project description */
+.project-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+  /* Styles for project images */
+.project-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+  /* Styles for project details, such as author and date */
+.project-details {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
+
+  /* Styles for project buttons, e.g., "Back to Home" */
+.project-buttons {
+    margin-top: 20px;
+}
+
+  /* Styles for any other specific elements on the project page */
+  /* Add more styles as needed */
