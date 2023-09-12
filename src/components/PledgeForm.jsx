@@ -81,7 +81,7 @@ function PledgeForm() {
         />
       </div>
       <div>
-        <label htmlFor="anonymous">Be an anonymous Advocat?</label>
+        <label htmlFor="anonymous">Be an anonymous?</label>
         <input
           type="checkbox"
           name="anonymous"

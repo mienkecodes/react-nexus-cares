@@ -1,4 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Just+Another+Hand&display=swap');Base HTML Styles */
+
+font: 
 
 :root {
   --blue: #50c4e6;
@@ -13,7 +14,7 @@
 html {
   box-sizing: border-box;
   font-size: 24px;
-  font-family: Helvetica, sans-serif;
+  font-family: sans-serif;
   color: var(--blue);
   scroll-behavior: smooth;
 }

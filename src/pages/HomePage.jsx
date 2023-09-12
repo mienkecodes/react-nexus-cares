@@ -22,7 +22,7 @@ function HomePage() {
         })}
       </section>
       <Link to="/new-project" className="button centrr-block-object">Start Fundraising</Link>
-      <Link to="/projects" className="button centrr-block-object">Projects to Advocat</Link>
+      <Link to="/projects" className="button centrr-block-object">Nexus projects</Link>
     </article>
   );
 }

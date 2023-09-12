@@ -21,14 +21,14 @@ function ProjectPage() {
     <div className="project-page">
       <img className="project-image centre-block-object" src={project.image} />
       {/* <h3>Created at: {project.date_created}</h3> */}
-      <Link to="/pledges" className="button centre-block-object">BE AN ADVOCAT</Link>
+      <Link to="/pledges" className="button centre-block-object">be a community Hero</Link>
       <article className="project-blurb">
       <h2>{project.title}</h2>
         <h5>Status: {`${project.is_open ? "Open" : "Closed"}`}</h5>
         <p>{project.description}</p>
       </article>
       <article className="recent-pledges">
-        <h3>Advocats</h3>
+        <h3>Nexus Cares</h3>
         <ul>
           {project.pledges.map((pledgeData, key) => {
             return (

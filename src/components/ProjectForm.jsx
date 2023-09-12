@@ -71,7 +71,7 @@ function ProjectForm() {
           type="text"
           id="description"
           name="description"
-          placeholder="What do you want to tell your advocats?"
+          placeholder="What do you want to tell your s?"
           onChange={handleChange}
         />
       </div>
@@ -93,7 +93,7 @@ function ProjectForm() {
           type="url"
           id="image"
           name="image"
-          placeholder="https://image-link.advocat"
+          placeholder="https://image-link"
           onChange={handleChange}
         />
       </div>

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { FaTimes } from "react-icons/fa";
+
 import "./NavBar.css";
 
 function NavBar() {
@@ -16,7 +15,7 @@ function NavBar() {
             onClick={() => setIsMobile(!isMobile)}>
             {isMobile ? (
               <i>
-                <GiHamburgerMenu />
+                {/* <GiHamburgerMenu /> */}
               </i>
             ) : (
               <i>
