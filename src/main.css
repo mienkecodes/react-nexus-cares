@@ -1,5 +1,5 @@
 
-font: 
+
 
 :root {
   --blue: #50c4e6;
@@ -43,12 +43,12 @@ input, button, textarea, select {
 
 /* Global styles */
 body {
-  font-family: 'Handlee', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
-font-family: 'Just Another Hand', cursive;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -82,7 +82,7 @@ h5 {
   color: var(--orange);
   background-color: var(--green);
   border-radius: 10px;
-  font-family: 'Just Another Hand', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;

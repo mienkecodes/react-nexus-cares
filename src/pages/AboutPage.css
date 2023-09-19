@@ -1,0 +1,70 @@
+/* Reset some default styles for consistency */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* About Hero section styling */
+#about-hero {
+  background-image: url("crowdfunding-frontend/img/Apples.jpeg"); /* Add your hero image path */
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#about-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Mission and Vision section styling */
+#mission-vision {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.mission,
+.vision {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mission h2,
+.vision h2 {
+  font-size: 2rem;
+}
+
+/* Team section styling */
+#team {
+  padding: 50px 0;
+}
+
+.team-member {
+  text-align: center;
+  margin: 20px;
+}
+
+.team-member img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.team-member p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+/* Add more CSS styles as needed for additional content or components */

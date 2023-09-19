@@ -15,16 +15,44 @@ function HomePage() {
   }
 
   return (
-    <article>
-      <section id="project-list">
-        {projects.map((projectData, key) => {
-          return <ProjectCard key={key} projectData={projectData} />;
-        })}
+<article>
+      <section id="hero">
+        <div className="hero-content">
+          <h1>Welcome to Nexus Cares</h1>
+          <p>Your platform for making a difference.</p>
+          <Link to="/new-project" className="button">Start Fundraising</Link>
+          <Link to="/projects" className="button">Explore Nexus Projects</Link>
+        </div>
       </section>
-      <Link to="/new-project" className="button centrr-block-object">Start Fundraising</Link>
-      <Link to="/projects" className="button centrr-block-object">Nexus projects</Link>
+
+      <section id="project-list">
+        <div className="container">
+          <h2>Featured Projects</h2>
+          <div className="project-cards">
+            {projects.map((projectData, key) => {
+              return <ProjectCard key={key} projectData={projectData} />;
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div className="container">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            eget justo non justo volutpat egestas in non nisl. Vivamus vel
+            massa eu ipsum sagittis commodo. Nullam eget tellus justo. Sed
+            vestibulum, purus in mollis bibendum, nunc libero pretium ex,
+            quis fringilla purus quam vel nulla. Proin rhoncus malesuada
+            metus a vehicula.
+          </p>
+          <Link to="/about" className="button">Learn More</Link>
+        </div>
+      </section>
     </article>
   );
+
 }
 
 export default HomePage;

@@ -1,14 +1,25 @@
-async function postProject(projectDetails) {
-  const url = `${import.meta.env.VITE_API_URL}/projects/`;
+async function putProject(id,title, description, goal, image, is_open,is_deleted) {
+  const url = `${import.meta.env.VITE_API_URL}/projects/${id}`;
   const token = window.localStorage.getItem("token");
-  const body = projectDetails;
+  const body = {
+    "title": title,
+    "description": description,
+    "goal": goal,
+    "image": image,
+    "is_open": is_open,
+    "is_deleted": is_deleted,
+  };
 
-  if (!image) {
-    delete body.image;
+  for (let bod in body) {
+    if (bod !=("is_open") && bod !=("is_deleted")) {
+      if (!body[bod]){
+        delete body[bod];
+      }
+    }
   }
 
   const response = await fetch(url, {
-    method: "POST",
+    method: "PUT",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Token ${token}`,
@@ -64,4 +75,4 @@ async function postProject(projectDetails) {
   return await response.json();
 }
 
-export default postProject;
+export default putProject;

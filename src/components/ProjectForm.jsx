@@ -11,6 +11,8 @@ function ProjectForm() {
     description: "",
     goal: "",
     image: "",
+    is_open: true,
+    date_created: new Date()
   });
 
   const handleChange = (event) => {
@@ -30,12 +32,7 @@ function ProjectForm() {
       projectDetails.description &&
       projectDetails.goal
     ) {
-      postProject(
-        projectDetails.title,
-        projectDetails.description,
-        projectDetails.goal,
-        projectDetails.image
-      )
+      postProject(projectDetails)
         .then((response) => {
           navigate(`/project/${response.id}/`);
         })
