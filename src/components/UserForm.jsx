@@ -14,6 +14,8 @@ function NewUserForm() {
     email: "",
     username: "",
     password: "",
+    skills: "",
+    availability: "",
   });
 
   const handleChange = (event) => {
@@ -35,6 +37,8 @@ function NewUserForm() {
         userDetails.email,
         userDetails.username,
         userDetails.password,
+        userDetails.skills,
+        userDetails.availability,
       )
         .then(() => {
           postLogin(userDetails.username, userDetails.password).then(
@@ -109,6 +113,34 @@ function NewUserForm() {
           name="password"
           id="password"
           placeholder="password"
+          onChange={handleChange}
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="skills"
+          className={formIsInvalid ? "error-message" : ""}>
+          Password<span className={formIsInvalid ? "" : "hidden"}>*</span>:
+        </label>
+        <input
+          type="string"
+          name="skills"
+          id="skills"
+          placeholder="What skills do you have to share and support our community?"
+          onChange={handleChange}
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="availability"
+          className={formIsInvalid ? "error-message" : ""}>
+          Password<span className={formIsInvalid ? "" : "hidden"}>*</span>:
+        </label>
+        <input
+          type="text"
+          name="availability"
+          id="availability"
+          placeholder="What is your availability? Weeksdays, weekends, flexible?"
           onChange={handleChange}
         />
       </div>
