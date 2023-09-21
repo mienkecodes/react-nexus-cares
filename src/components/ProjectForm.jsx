@@ -54,7 +54,7 @@ function ProjectForm() {
           type="text"
           id="title"
           name="title"
-          placeholder="Title"
+          placeholder="Title of your community project"
           onChange={handleChange}
         />
       </div>
@@ -68,7 +68,7 @@ function ProjectForm() {
           type="text"
           id="description"
           name="description"
-          placeholder="What do you want to tell your s?"
+          placeholder="Who could we help and how? What skills do we need?"
           onChange={handleChange}
         />
       </div>
@@ -80,7 +80,7 @@ function ProjectForm() {
           type="float"
           id="goal"
           name="goal"
-          placeholder="amount"
+          placeholder="number of volunteer hours needed"
           onChange={handleChange}
         />
       </div>
