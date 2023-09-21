@@ -1,0 +1,71 @@
+Reset some default styles for consistency
+
+/* NavBar container */
+.nav-header {
+  background-color: #0067A4; /* Match the header color of nexuscare.com.au */
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 0;
+}
+
+/* Logo styling */
+.logo img {
+  width: 150px;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation menu */
+.nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  ;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #000000; /* Set text color to wblack */
+  font-weight: bold;
+  padding: 10px 20px; /* Increase padding for better touch interaction */
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #00AEEF; /* Match the hover color of nexuscare.com.au */
+}
+
+
+/* Mobile Menu Styling */
+.nav-menu.open {
+  flex-direction: row;
+  align-items: flex-start;
+  position: absolute;
+  top: 60px; /* Adjust the top position to align with your header */
+  left: 0;
+  width: 100%;
+  background-color: #0067A4; /* Match the header color of nexuscare.com.au */
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu.open ul {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav-menu.open li {
+  margin: 10px 0;
+}
+
+.nav-menu.open a {
+  padding: 5px 20px; /* Increase padding for better touch interaction */
+  color: #fff; /* Set text color to white */
+}

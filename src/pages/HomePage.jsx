@@ -20,9 +20,17 @@ function HomePage() {
         <div className="hero-content">
           <h1>Welcome to Nexus Cares</h1>
           <p>Your platform for making a difference.</p>
+          {/* <Link to="/new-project" className="button">Start Fundraising</Link>
+          <Link to="/projects" className="button">Explore Nexus Projects</Link> */}
+        </div>
+      </section>
+      <div className="hero-content">
+          
           <Link to="/new-project" className="button">Start Fundraising</Link>
           <Link to="/projects" className="button">Explore Nexus Projects</Link>
         </div>
+      <section>
+
       </section>
 
       <section id="project-list">

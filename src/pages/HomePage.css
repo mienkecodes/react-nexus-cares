@@ -7,7 +7,7 @@ body, html {
 
 /* Hero section styling */
 #hero {
-  background-image: url('/hero-background.jpg'); /* Add your hero image path */
+  background-image: url('https://images.squarespace-cdn.com/content/v1/5796ca119de4bb9312e0fd93/1612510092733-NFIE12Q4GB6AXI5L9L6C/image-asset.jpeg?format=2500w'); /* Add your hero image path */
   background-size: cover;
   background-position: center;
   color: #ffffff;
