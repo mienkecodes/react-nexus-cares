@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 import useProjects from "../hooks/use-projects";
 import ProjectCard from "../components/ProjectCard";
-import "./HomePage.css";
+import "./ProjectPage.css";
 
 
 function ProjectsPage() {
@@ -27,6 +29,11 @@ function ProjectsPage() {
           <br></br>anywhere you could help out?
         </p>
       </section>
+      <Link to="/new-project"> {/* Use the Link component to create the link */}
+        <button id="create-project-button">
+          <p>Create My Own Project</p>
+        </button>
+      </Link>
       <section id="project-list">
         {projects.map((projectData, key) => {
           return <ProjectCard key={key} projectData={projectData} />;

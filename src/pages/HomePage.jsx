@@ -28,8 +28,8 @@ function HomePage() {
       </break>
       <div className="hero-content">
           
-          <Link to="/new-project" className="button">Who would you like to help and how?</Link>
-          <Link to="/projects" className="button">Explore Current and previous Nexus Care Projects</Link>
+          <Link to="/new-project" className="button">Create your own cummunity initiative</Link>
+          <p> Who would you like to help and how?</p>
         </div>
       <section>
 
@@ -43,7 +43,9 @@ function HomePage() {
               return <ProjectCard key={key} projectData={projectData} />;
             })}
           </div>
-        </div>
+        </div>          
+        <Link to="/projects" className="button">Explore Current and previous Nexus Care Projects</Link>
+
       </section>
 
       <section id="about">

@@ -18,6 +18,7 @@
 .project-description {
     font-size: 16px;
     margin-bottom: 20px;
+    margin: 20px;
 }
 
   /* Styles for project images */
@@ -41,3 +42,22 @@
 
   /* Styles for any other specific elements on the project page */
   /* Add more styles as needed */
+
+  #create-project-button {
+    /* Your CSS styles for the button with the id "create-project-button" */
+    background-color: #84acd7;
+    color: #ffffff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-left: 40px;
+  }
+  
+  #create-project-button:hover {
+    background-color: #0056b3;
+  }
+  
