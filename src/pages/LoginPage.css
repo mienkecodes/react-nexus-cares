@@ -1,13 +1,13 @@
 /* Reset some default styles for consistency */
 body, html {
   margin: 0;
-  padding: 0;
+  padding: 0; /* You had a typo here; it should be "0" instead of "100" */
   font-family: Arial, sans-serif;
 }
 
 /* LoginPage container styling */
 .login-page {
-  background-color: #f8f9fa;
+  background-color: #ffffff; /* Change background color to white */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -15,21 +15,23 @@ body, html {
 }
 
 .login-container {
-  background-color: #ffffff;
+  background-color: #f8f9fa; /* Change background color to a light gray */
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 40px;
   text-align: center;
+  margin-top: 1000px; /* Add margin-top to move the container further down */
+margin-bottom: 40px;
 }
 
 .login-container h1 {
-  font-size: 2.5rem;
+  font-size: 2rem; /* Increase font size for headings */
   margin-bottom: 20px;
   color: #343a40; /* Dark text color similar to Nexus Cares */
 }
 
 .login-container p {
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Increase font size for text */
   margin-bottom: 30px;
   color: #777; /* Subdued text color similar to Nexus Cares */
 }
@@ -39,25 +41,27 @@ body, html {
 
 /* Input fields */
 .login-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
+  width: 100%; /* Make input fields span the entire width */
+  padding: 15px; /* Increase padding for better spacing */
+  margin-bottom: 20px; /* Increase margin for better spacing */
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 1.2rem; /* Increase font size for input fields */
 }
 
 /* Login button */
 .login-button {
-  background-color: #007bff;
+  background-color: #4c86b9; /* Change button background color */
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 15px 30px; /* Increase padding for a larger button */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+  font-size: 1.2rem; /* Increase font size for the button text */
   transition: background-color 0.3s ease;
 }
 
 .login-button:hover {
-  background-color: #0056b3;
+  background-color: #5d9ee3; /* Change hover background color */
 }

@@ -18,16 +18,18 @@ function HomePage() {
 <article>
       <section id="hero">
         <div className="hero-content">
-          <h1>Welcome to Nexus Cares</h1>
-          <p>Your platform for making a difference.</p>
+          <h1>Welcome to Nexus Care</h1>
+          <p>Your platform for making a difference in your community.</p>
           {/* <Link to="/new-project" className="button">Start Fundraising</Link>
           <Link to="/projects" className="button">Explore Nexus Projects</Link> */}
         </div>
       </section>
+      <break>
+      </break>
       <div className="hero-content">
           
-          <Link to="/new-project" className="button">Start Fundraising</Link>
-          <Link to="/projects" className="button">Explore Nexus Projects</Link>
+          <Link to="/new-project" className="button">Who would you like to help and how?</Link>
+          <Link to="/projects" className="button">Explore Current and previous Nexus Care Projects</Link>
         </div>
       <section>
 
@@ -48,12 +50,7 @@ function HomePage() {
         <div className="container">
           <h2>About Us</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            eget justo non justo volutpat egestas in non nisl. Vivamus vel
-            massa eu ipsum sagittis commodo. Nullam eget tellus justo. Sed
-            vestibulum, purus in mollis bibendum, nunc libero pretium ex,
-            quis fringilla purus quam vel nulla. Proin rhoncus malesuada
-            metus a vehicula.
+            The nexus care helping hand app is created to help you support your community.
           </p>
           <Link to="/about" className="button">Learn More</Link>
         </div>

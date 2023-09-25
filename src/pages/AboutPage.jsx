@@ -4,9 +4,17 @@ import "./AboutPage.css"; // Import your CSS styles here
 function AboutUsPage() {
   return (
     <div className="about-us-container">
-      <section id="about-hero">
-        <div className="about-hero-content">
+      <section id="hero">
+        <div className="hero-content">
           <h1>ABOUT US</h1>
+          
+        </div>
+      </section>
+
+      <section id="mission-vision">
+        <div className="container">
+          <div className="mission">
+
           <p>
             Nexus Care is an innovative, not-for-profit organization caring for
             the northern suburbs of Brisbane and beyond. Since opening the
@@ -21,15 +29,11 @@ function AboutUsPage() {
             programs. We work in partnership with other organizations, businesses,
             and the government. Inspired by our faith in Christ, Nexus Care is
             passionate about seeing people journey towards wholeness and finding
-            a fresh start in life. Nexus Care is a Public Benevolent Institution.
-            Inc Number: IA 12146
-          </p>
-        </div>
-      </section>
+            a fresh start in life. 
 
-      <section id="mission-vision">
-        <div className="container">
-          <div className="mission">
+
+
+          </p>
             <h2>OUR MISSION</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
@@ -99,7 +103,7 @@ function AboutUsPage() {
 
       <section id="team">
         <div className="container">
-          <h2>OUR TEAM</h2>
+          {/* <h2>OUR TEAM</h2>
           <div className="team-member">
             <img src="/team-member1.jpg" alt="Team Member 1" />
             <h3>John Doe</h3>
@@ -110,7 +114,7 @@ function AboutUsPage() {
             <h3>Jane Smith</h3>
             <p>COO</p>
           </div>
-          {/* Add more team members as needed */}
+          Add more team members as needed */}
         </div>
       </section>
     </div>

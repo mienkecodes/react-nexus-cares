@@ -27,6 +27,7 @@ async function postProject(projectDetails) {
       goalError: data?.goal,
       imageError: data?.image,
       detailError: data?.detail,
+      
     };
     if (errorMessages) {
       if (

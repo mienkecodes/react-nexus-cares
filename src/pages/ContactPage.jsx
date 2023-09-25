@@ -7,13 +7,11 @@ import "./ContactPage.css"; // Import your CSS styles here
 function ContactUsPage() {
     return (
     <div className="contact-us-container">
-        <section id="contact-hero">
-        <div className="contact-hero-content">
+        <section id="hero">
+        <div className="hero-content">
             <h1>Contact Us</h1>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            eget justo non justo volutpat egestas in non nisl. Vivamus vel
-            massa eu ipsum sagittis commodo.
+        
             </p>
         </div>
         </section>

@@ -13,6 +13,8 @@ async function postUser(first_name,last_name,email,username,password) {
       "email": email,
       "username": username,
       "password": password,
+      "skills": skills,
+      "availability": availability,
     }),
   });
 

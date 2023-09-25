@@ -1,10 +1,14 @@
 import { useState } from "react";
 import postLogin from "../api/post-login";
 import { useNavigate } from "react-router-dom";
+// import useAuth from "../hooks/use-auth.js"
 
 function LoginForm() {
   const navigate = useNavigate();
   const [errorMessage, setErrorMessage] = useState("");
+
+  //todo - these should not be curly brackets?
+  // const [auth, setAuth] = useAuth();
   const [formIsInvalid, setFormIsInvalid] = useState("");
 
   const [credentials, setCredentials] = useState({
@@ -28,6 +32,10 @@ function LoginForm() {
       postLogin(credentials.username, credentials.password)
         .then((response) => {
           window.localStorage.setItem("token", response.token);
+          //we add this here to persist our login
+          // setAuth({
+          //   token: response.token,
+          // })
           navigate("/");
         })
         .catch((error) => {

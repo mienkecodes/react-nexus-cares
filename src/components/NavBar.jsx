@@ -1,10 +1,24 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, Outlet} from "react-router-dom";
+// import  useAuth  from "../hooks/use-auth.js";
+
 import "./NavBar.css";
 
 function NavBar() {
+
+    //these are curly brackets in course content
+//   const [auth, setAuth] = useAuth();
+
+    // const handleLogout = () => {
+    //     window.localStorage.removeItem("token");
+    //     setAuth({ token: null });
+    // };
+
+    //debugging - can we see current auth value?
+  //console.log("---------------AUTH VALUE------------------: ", auth)
+
   const [isMobile, setIsMobile] = useState(false);
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   const toggleMobileMenu = () => {
     setIsMobile(!isMobile);
@@ -14,12 +28,24 @@ function NavBar() {
     setIsMobile(false);
   };
 
-  const handleNavLinkClick = (path) => {
+  const handleNavLinkClick = () => {
     closeMobileMenu();
-    navigate(path);
+    //navigate(path);
   };
 
-  return (
+//   return (
+//     <div>
+//         <nav>
+//             {auth.token ? (
+//                 <Link to="/" onClick={handleLogout}>Log Out</Link>
+//                 ) : (<Link to="/login">Login</Link>)}
+//         </nav>
+//         <Outlet />
+//     </div>
+//   )
+
+  
+return (
     <header className="nav-header">
       <nav className="nav-container">
         <div className="nav-logo">
@@ -36,117 +62,32 @@ function NavBar() {
         </button>
         <ul className={isMobile ? "nav-menu mobile-menu-open" : "nav-menu"}>
           <li>
-            <Link to="/" onClick={() => handleNavLinkClick("/")}>
-              Home
-            </Link>
+    {/* Link to is whats handling our navigation through the nav and outlet (see main jsx) and will take us to a diff page. handleNavLinkClick therefore no longer needs the url path as an argument  */}
+            <Link to="/" onClick={() => handleNavLinkClick()}>Home</Link>
           </li>
           <li>
-            <Link to="/about" onClick={() => handleNavLinkClick("/about")}>
-              About
-            </Link>
+            <Link to="/about" onClick={() => handleNavLinkClick()}>About</Link>
           </li>
           <li>
-            <Link to="/contact" onClick={() => handleNavLinkClick("/contact")}>
-              Contact
-            </Link>
+            <Link to="/contact" onClick={() => handleNavLinkClick()}>Contact</Link>
           </li>
           <li>
-            <Link to="/login" onClick={() => handleNavLinkClick("/login")}>
-              Log In
-            </Link>
+            <Link to="/login" onClick={() => handleNavLinkClick()}> Log In</Link>
           </li>
           <li>
             <Link
               to="/create-account"
-              onClick={() => handleNavLinkClick("/create-account")}
+              onClick={() => handleNavLinkClick()}
             >
               Create Account
             </Link>
           </li>
         </ul>
       </nav>
+      <Outlet />
     </header>
   );
 }
 
 export default NavBar;
 
-
-
-
-// import { useState } from "react";
-// import { Link, Outlet } from "react-router-dom";
-// // import useAuth from "../../hooks/use-auth.js";
-// import "./NavBar.css";
-
-// function NavBar() {
-//   const [isMobile, setIsMobile] = useState(true);
-//   return (
-//     <div>
-//       <header>
-//         <img src="/nexuscares-logo.png" alt="Nexus cares" />
-//         <nav className="nav-bar">
-//           <button
-//             className="mobile-menu-icon"
-//             onClick={() => setIsMobile(!isMobile)}>
-//             {isMobile ? (
-//               <i>
-//                 {/* <GiHamburgerMenu /> */}
-//               </i>
-//             ) : (
-//               <i>
-//                 {/* < FaTimes/> */}
-//               </i>
-//             )}
-//           </button>
-//           <ul
-//             className={isMobile ? "hidden" : ""}
-//             onClick={() => setIsMobile(false)}>
-//             <li>
-//               <Link to="/">Home</Link>
-//             </li>
-//             <li>
-//               <Link to="/about">About</Link>
-//             </li>
-//             <li>
-//               <Link to="/contact">Contact</Link>
-//             </li>
-//             <li>
-//               <Link to="/login">Log In</Link>
-//             </li>
-//             <li>
-//               <Link to="/create-account">Create Account</Link>
-              
-//               {/* {/* {auth.token ? (
-//               <>
-//                 <li>
-//                   <Link to="/profile">Profile</Link>
-//                 </li>
-//                 <li>
-//                   <Link to="/" onClick={handleLogout}>
-//                     Log Out
-//                   </Link>
-//                 </li>
-//               </>
-//             ) : (
-//               <>
-//                 <li>
-//                   <Link to="/login">Log In</Link>
-//                 </li>
-//                 <li>
-//                   <Link to="/create-account">Create Account</Link>
-//                 </li>
-//               </> */}
-            
-              
-              
-//             </li>
-//           </ul>
-//         </nav>
-//       </header>
-//       <Outlet />
-//     </div>
-//   );
-// }
-
-// export default NavBar;

@@ -8,7 +8,7 @@ function PledgeForm() {
   const [pledgeDetails, setPledgeDetails] = useState({
     amount: "",
     comment: "",
-    anonymous: false,
+    // anonymous: false,
     project: 1,
   });
 
@@ -25,10 +25,9 @@ function PledgeForm() {
     const checkedName = event.target.name;
     console.log(checked,checkedName)
     //update the anonymous field only if checkbox input has been clicked
-    if (checkedName == "anonymous") {
-      pledgeDetails.anonymous = checked;
-    }
-  };
+    // if (checkedName == "anonymous") {
+    //   pledgeDetails.anonymous = checked;
+    };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -39,13 +38,13 @@ function PledgeForm() {
       postPledge(
         pledgeDetails.amount,
         pledgeDetails.comment,
-        pledgeDetails.anonymous,
+        // pledgeDetails.anonymous,
         pledgeDetails.project
       )
         .then(() => {
           return (
             <article>
-              <h1>Thank you for your donation!</h1>
+              <h1>Thank you for offering to help our community!</h1>
               <Link to="/projects">View other projects</Link>
             </article>
           );
@@ -66,7 +65,7 @@ function PledgeForm() {
           type="float"
           name="amount"
           id="amount"
-          placeholder="Enter amount"
+          placeholder="Enter number of hours you are available to help."
           onChange={handleChange}
         />
       </div>
@@ -76,19 +75,19 @@ function PledgeForm() {
           type="text"
           name="comment"
           id="comment"
-          placeholder="comment"
+          placeholder="any special skills or availability issues we need to know about?"
           onChange={handleChange}
         />
       </div>
-      <div>
-        <label htmlFor="anonymous">Be an anonymous?</label>
+      {/* <div>
+        <label htmlFor="anonymous">Be an anon donor?</label>
         <input
           type="checkbox"
           name="anonymous"
           id="anonymous"
           onChange={handleChange}
         />
-      </div>
+      </div> */}
       <button type="submit" className="button" onClick={handleSubmit}>
         Submit
       </button>
