@@ -6,7 +6,7 @@ function LogoutPage() {
     <div className="logout-page">
         <div className="logout-container">
         <h1>Thanks</h1>
-        <p>Share the love</p>
+        <p>Lets keep supporting our community, hope to see you agian soon,</p>
         </div>
     </div>
     );

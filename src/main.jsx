@@ -22,6 +22,11 @@ import NewProjectPage from "./pages/NewProjectPage.jsx";
 import NewPledgePage from "./pages/NewPledgePage.jsx";
 import TestNavBarPage from "./pages/TestNavbarPage.jsx"
 
+// import UserPage from "./pages/UserProfilePage/UserProfilePage.jsx";
+// import ProjectUpdatePage from "./pages/ProjectUpdatePage/ProjectUpdatePage.jsx";
+// import UserUpdatePage from "./pages/UserUpdatePage/UserUpdatePage.jsx";
+// import PledgeUpdatePage from "./pages/PledgeUpdatePage/PledgeUpdatePage.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -32,6 +37,9 @@ const router = createBrowserRouter([
       { path: "/", element: <HomePage /> },
       { path: "/project/:id", element: <ProjectPage /> },
       { path: "/projects", element: <ProjectsPage /> },
+      // { path: "/update/project/:id", element: <ProjectUpdatePage /> },
+
+
       { path: "/login", element: <LoginPage/> },
       { path: "/logout", element: <LogoutPage/> },
 
@@ -40,6 +48,10 @@ const router = createBrowserRouter([
       { path: "/create-account", element: <NewUserPage />},
       { path: "/new-project", element: <NewProjectPage />},
       { path: "/pledges", element: <NewPledgePage />},
+      // { path: "/update/project/:id", element: <ProjectUpdatePage /> },
+      // { path: "/profile", element: <UserPage />},
+      // { path: "/profile/update", element: <UserUpdatePage />},
+
       //delete this test navbar if you dont like it!
       {path: "/testnavbar", element: <TestNavBarPage />}
     ],

@@ -34,10 +34,9 @@ function AboutUsPage() {
 
 
           </p>
-            <h2>OUR MISSION</h2>
+            <h2>WHAT WE DO:</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              eget justo non justo volutpat egestas in non nisl.
+              Some of our running projects, how we currently help our community.
             </p>
             {/* Button for "WHAT WE DO" link */}
             <a

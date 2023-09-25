@@ -1,4 +1,6 @@
 /* Reset some default styles for consistency */
+
+
 body, html {
   margin: 0;
   padding: 0;
@@ -68,3 +70,20 @@ body, html {
 }
 
 /* Add more CSS styles as needed for additional content or components */
+.btn-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b007bff; /* Change to your desired background color */
+  color: #0056b3; /* Text color */
+  text-decoration: none;
+  border: 2px solid #007bff; /* Border color matching the background color */
+  border-radius: 5px; /* Rounded corners */
+  margin: 5px; /* Adjust margin as needed */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-link:hover {
+  background-color: #0056b3; /* Change to your desired hover background color */
+  color: #fff; /* Hover text color */
+  text-decoration: none;
+}
