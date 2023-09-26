@@ -1,6 +1,15 @@
 /* ProjectPage.css */
 @import "../main.css";
 
+
+
+:root {
+  --blue: #50c4e6;
+  --orange: #f38021;
+  --green: #7abf43;
+  --white: #ffffff;
+  --black: #000000;
+}
 /* Styles for the entire project page container */
 .project-page {
     padding: 20px;

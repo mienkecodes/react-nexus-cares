@@ -1,6 +1,14 @@
 /* Reset some default styles for consistency */
 
 
+:root {
+  --blue: #50c4e6;
+  --orange: #f38021;
+  --green: #7abf43;
+  --white: #ffffff;
+  --black: #000000;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -75,10 +83,10 @@ body, html {
 .btn-link {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #cfcfcf ; /* Change to your desired background color */
-  color: #0056b3; /* Text color */
+  background-color: var(--blue) ; /* Change to your desired background color */
+  color: var(--black); /* Text color */
   text-decoration: none;
-  border: 2px solid #007bff; /* Border color matching the background color */
+  border: 2px solid var(--blue); /* Border color matching the background color */
   border-radius: 5px; /* Rounded corners */
   margin: 5px; /* Adjust margin as needed */
   transition: background-color 0.3s ease, color 0.3s ease;

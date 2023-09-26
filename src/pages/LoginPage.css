@@ -1,4 +1,14 @@
 /* Reset some default styles for consistency */
+
+
+:root {
+  --blue: #50c4e6;
+  --orange: #f38021;
+  --green: #7abf43;
+  --white: #ffffff;
+  --black: #000000;
+}
+
 body, html {
   margin: 0;
   padding: 0; /* You had a typo here; it should be "0" instead of "100" */

@@ -1,4 +1,4 @@
-import "./LoginPage.css"; // Import your CSS styles here
+import "./HomePage.css";
 // import LoginForm from "../components/LoginForm";
 
 function LogoutPage() {

@@ -1,4 +1,14 @@
-/* Reset some default styles for consistency */
+
+
+:root {
+  --blue: #50c4e6;
+  --orange: #f38021;
+  --green: #7abf43;
+  --white: #ffffff;
+  --black: #000000;
+}/* Reset some default styles for consistency */
+
+
 body, html {
   margin: 0;
   padding: 0;
@@ -31,7 +41,7 @@ body, html {
 
 /* Buttons in the hero section */
 #hero .button {
-  background-color: #007bff;
+  background-color:var(--blue);
   color: #ffffff;
   padding: 10px 20px;
   border: none;
@@ -43,8 +53,26 @@ body, html {
 }
 
 #hero .button:hover {
-  background-color: #0056b3;
+  background-color: #113e6e;
 }
+
+/* Target the "Create your own community initiative" button */
+.hero-content .button {
+  background-color: var(--orange); /* Change to your desired background color */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-right: 0; /* Remove the right margin to align with the text */
+  transition: background-color 0.3s ease;
+}
+
+.hero-content .button:hover {
+  background-color: #e36400; /* Change to your desired hover background color */
+}
+
 
 /* Project list section styling */
 #project-list {
@@ -87,7 +115,7 @@ body, html {
 
 /* About section button */
 #about .button {
-  background-color: #007bff;
+  background-color: var(--blue);
   color: #ffffff;
   padding: 10px 20px;
   border: none;

@@ -29,9 +29,9 @@ function HomePage() {
       <div className="hero-content">
           
           <Link to="/new-project" className="button">Create your own cummunity initiative</Link>
-          <p> Who would you like to help and how?</p>
         </div>
       <section>
+      <p> Who would you like to help and how?</p>
 
       </section>
 

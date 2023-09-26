@@ -10,7 +10,7 @@ import TestNavBar from "./components/TestNavbar.jsx"
 
 // Import Pages
 import HomePage from "./pages/HomePage.jsx";
-import ProjectPage from "./pages/ProjectPage-original.jsx";
+import ProjectPage from "./pages/ProjectPage.jsx";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import LogoutPage from "./pages/LogoutPage.jsx";

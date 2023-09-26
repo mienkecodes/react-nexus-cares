@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import useProjects from "../hooks/use-projects";
 import ProjectCard from "../components/ProjectCard";
 import "./ProjectPage.css";
+import ProjectPage from "./ProjectPage";
 
 
 function ProjectsPage() {
@@ -29,7 +30,7 @@ function ProjectsPage() {
           <br></br>anywhere you could help out?
         </p>
       </section>
-      <Link to="/new-project"> {/* Use the Link component to create the link */}
+      <Link to="/new-project"> {}
         <button id="create-project-button">
           <p>Create My Own Project</p>
         </button>
